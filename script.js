@@ -257,7 +257,7 @@ function generatePDF() {
     $('#resume-content').printThis({
         // importCSS: true,
         importStyle: true,
-        loadCSS: "file:///C:/Users/sahup/OneDrive/Documents/Desktop/Enigma%20web%20dev%20project%202/styles.css",
+        loadCSS: "https://prajnamayeesahu.github.io/resume-generator/styles.css",
         removeInline: false,
     });
 }
