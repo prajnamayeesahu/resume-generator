@@ -268,7 +268,7 @@ $(document).ready(function () {
         $('#resume-content').printThis({
             importCSS: true,
             importStyle: true,
-            loadCSS: "styles.css",
+            loadCSS: "https://prajnamayeesahu.github.io/resume-generator/styles.css",
             removeInline: false,
         });
     })
