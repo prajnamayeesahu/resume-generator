@@ -264,7 +264,7 @@ function populateResumeContent(data, photo) {
 
 $(document).ready(function () {
     $('#download-pdf').click(function () {
-        console.log('clicked');
+        // console.log('clicked');
         $('#resume-content').printThis({
             importCSS: true,
             importStyle: true,
