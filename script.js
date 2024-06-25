@@ -252,27 +252,15 @@ function populateResumeContent(data, photo) {
     resumeContentInnerHTML = document.getElementById('resume-content');
 }
 
-// function generatePDF() {
-//     console.log('clicked');
-//     $('#resume-content').printThis({
-//         // importCSS: true,
-//         importStyle: true,
-//         loadCSS: "file:///C:/Users/sahup/OneDrive/Documents/Desktop/Enigma%20web%20dev%20project%202/styles.css",
-//         removeInline: false,
-//     });
-// }
-
-$(document).ready(function () {
-    $('#download-pdf').click(function () {
-        // console.log('clicked');
-        $('#resume-content').printThis({
-            importCSS: true,
-            importStyle: true,
-            loadCSS: "https://prajnamayeesahu.github.io/resume-generator/styles.css",
-            removeInline: false,
-        });
-    })
-})
+function generatePDF() {
+    // console.log('clicked');
+    $('#resume-content').printThis({
+        // importCSS: true,
+        importStyle: true,
+        loadCSS: "file:///C:/Users/sahup/OneDrive/Documents/Desktop/Enigma%20web%20dev%20project%202/styles.css",
+        removeInline: false,
+    });
+}
 // function generatePDF() {
 //     console.log('clicked');
 //     const resumeContent = document.getElementById('resume-content');
@@ -307,5 +295,5 @@ $(document).ready(function () {
 //     });
 // }
 
-// document.getElementById('download-pdf').addEventListener('click', generatePDF);
+document.getElementById('download-pdf').addEventListener('click', generatePDF);
 
