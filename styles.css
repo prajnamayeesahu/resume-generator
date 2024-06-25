@@ -57,6 +57,11 @@ textarea::placeholder {
     font-size: 0.85em;
 }
 
+textarea {
+    resize: none;
+    width: 100%;
+}
+
 .image-upload {
     position: relative;
     width: 150px;
@@ -248,6 +253,16 @@ input {
     bottom: 0;
     padding: 4%;
     overflow: auto;
+}
+
+#generate-resume[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#download-pdf[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 @media (max-width: 992px) {

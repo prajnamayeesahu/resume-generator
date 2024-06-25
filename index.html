@@ -59,7 +59,7 @@
                                 <div class="col-8">
                                     <div>
                                         <span>First Name:</span>
-                                        <input type="text" name="firstName" placeholder="Enter First Name">
+                                        <input type="text" name="firstName" placeholder="Enter First Name" required>
                                     </div>
                                     <div>
                                         <span>Middle Name:</span>
@@ -67,7 +67,7 @@
                                     </div>
                                     <div>
                                         <span>Last Name:</span>
-                                        <input type="text" name="lastName" placeholder="Enter Last Name">
+                                        <input type="text" name="lastName" placeholder="Enter Last Name" required>
                                     </div>
                                 </div>
                             </div>
@@ -75,21 +75,22 @@
                         <div class="d-flex justify-content-between">
                             <div class="me-4">
                                 <span>Email Id:</span>
-                                <input type="text" name="emailId" placeholder="Enter Email Id">
+                                <input type="text" name="emailId" placeholder="Enter Email Id" required>
                             </div>
                             <div>
                                 <span>Phone Number:</span>
-                                <input type="text" name="phoneNumber" placeholder="Enter Phone Number">
+                                <input type="text" name="phoneNumber" placeholder="Enter Phone Number" required>
                             </div>
                         </div>
                         <div class="d-flex justify-content-between">
                             <div class="me-4">
                                 <span>Address:</span>
-                                <input type="text" name="address" placeholder="Enter Your Address" autocomplete="on">
+                                <input type="text" name="address" placeholder="Enter Your Address" autocomplete="on"
+                                    required>
                             </div>
                             <div>
                                 <span>Linkedln Profile:</span>
-                                <input type="text" name="linkedInProfile" placeholder="Enter Linkedln Profile">
+                                <input type="text" name="linkedInProfile" placeholder="Enter Linkedln Profile" required>
                             </div>
                         </div>
                     </div>
@@ -98,8 +99,7 @@
                         <h4>Professional Summary</h4>
                         <div>
                             <span>Summary</span>
-                            <textarea name="professionalSummary" rows="4" cols="47" style="resize:none"
-                                placeholder="Enter Summary"></textarea>
+                            <textarea name="professionalSummary" rows="4" placeholder="Enter Summary"></textarea>
                         </div>
                     </div>
                     <!-- Education -->
@@ -152,8 +152,7 @@
                         </div>
                         <div class="mb-3">
                             <span>Description</span>
-                            <textarea name="experienceSummary" rows="4" cols="47" style="resize:none"
-                                placeholder="Enter Summary"></textarea>
+                            <textarea name="experienceSummary" rows="4" placeholder="Enter Summary"></textarea>
                         </div>
                         <button type="button" class="btn btn-primary btn-sm mt-2 add-section-btn">Add Section</button>
                     </div>
@@ -172,8 +171,7 @@
                         </div>
                         <div class="mb-3">
                             <span>Description</span>
-                            <textarea name="projectSummary" rows="4" cols="47" style="resize:none"
-                                placeholder="Enter Summary"></textarea>
+                            <textarea name="projectSummary" rows="4" placeholder="Enter Summary"></textarea>
                         </div>
                         <button type="button" class="btn btn-primary btn-sm mt-2 add-section-btn">Add Section</button>
                     </div>
@@ -193,8 +191,7 @@
                         </div>
                         <div class="mb-3">
                             <span>Description</span>
-                            <textarea name="certificationSummary" rows="4" cols="47" style="resize:none"
-                                placeholder="Enter Summary"></textarea>
+                            <textarea name="certificationSummary" rows="4" placeholder="Enter Summary"></textarea>
                         </div>
                         <button type="button" class="btn btn-primary btn-sm mt-2 add-section-btn">Add Section</button>
                     </div>
@@ -203,7 +200,7 @@
                         <h4>Skills</h4>
                         <div class="mb-3">
                             <span>Skills</span>
-                            <input type="text" name="skills" class="w-47">
+                            <input type="text" name="skills" style="width: 50%;">
                         </div>
                         <button type="button" class="btn btn-primary btn-sm mt-2 add-section-btn">Add Skills</button>
                     </div>
@@ -211,8 +208,10 @@
             </div>
             <!-- right-side -->
             <div class="col-lg-6 right-div p-3" style="background-color: black;">
-                <button type="button" id="generate-resume" class="btn btn-primary btn-sm mb-2">Generate Resume</button>
-                <button type="button" id="download-pdf" class="btn btn-success btn-sm mb-2">Download as PDF</button>
+                <button type="button" id="generate-resume" class="btn btn-primary btn-sm mb-2" disabled>Generate
+                    Resume</button>
+                <button type="button" id="download-pdf" class="btn btn-success btn-sm mb-2" disabled>Download as
+                    PDF</button>
                 <div class="resume">
                     <!-- Resume content will be populated here -->
                     <div class="resume-preview" id="resume-content">

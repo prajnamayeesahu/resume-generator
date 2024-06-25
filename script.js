@@ -1,3 +1,19 @@
+const form = document.getElementById('resume-form');
+const generateButton = document.getElementById('generate-resume');
+const downloadButton = document.getElementById('download-pdf');
+
+form.addEventListener('input', function () {
+    const allFieldsValid = [...form.elements].every(element => {
+        return !element.hasAttribute('required') || element.validity.valid;
+    });
+
+    generateButton.disabled = !allFieldsValid;
+    downloadButton.disabled = !allFieldsValid;
+});
+
+
+
+
 document.querySelectorAll('.add-section-btn').forEach(button => {
     button.addEventListener('click', function () {
         const section = this.parentNode;
@@ -57,7 +73,7 @@ document.querySelectorAll('.add-section-btn').forEach(button => {
                         </div>
                         <div>
                             <span>Description</span>
-                            <textarea name="experienceSummary" rows="4" cols="47" style="resize:none"
+                            <textarea name="experienceSummary" rows="4" 
                                 placeholder="Enter Summary"></textarea>
                         </div>
                         <button type="button" class="btn btn-danger mt-2 btn-sm delete-btn">Delete Section</button>
@@ -79,7 +95,7 @@ document.querySelectorAll('.add-section-btn').forEach(button => {
                         </div>
                         <div>
                             <span>Description</span>
-                            <textarea name="projectSummary" rows="4" cols="47" style="resize:none"
+                            <textarea name="projectSummary" rows="4" 
                                 placeholder="Enter Summary"></textarea>
                         </div>
                         <button type="button" class="btn btn-danger mt-2 btn-sm delete-btn">Delete Section</button>
@@ -101,7 +117,7 @@ document.querySelectorAll('.add-section-btn').forEach(button => {
                         </div>
                         <div>
                             <span>Description</span>
-                            <textarea name="certificationSummary" rows="4" cols="47" style="resize:none"
+                            <textarea name="certificationSummary" rows="4" 
                                 placeholder="Enter Summary"></textarea>
                         </div>
                         <button type="button" class="btn btn-danger mt-2 btn-sm delete-btn">Delete Section</button>
