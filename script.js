@@ -268,7 +268,7 @@ $(document).ready(function () {
         $('#resume-content').printThis({
             importCSS: true,
             importStyle: true,
-            loadCSS: "file:///C:/Users/sahup/OneDrive/Documents/Desktop/Enigma%20web%20dev%20project%202/styles.css",
+            loadCSS: "styles.css",
             removeInline: false,
         });
     })
