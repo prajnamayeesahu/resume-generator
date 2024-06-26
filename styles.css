@@ -279,3 +279,30 @@ input {
         width: 100%;
     }
 }
+
+@media (max-width: 600px) {
+    #resume-content h1 {
+        font-size: 1.25em;
+    }
+
+    #resume-content h2 {
+        font-size: 1em;
+    }
+
+    #resume-content h3 {
+        font-size: 0.8em;
+    }
+
+    #resume-content h4 {
+        font-size: 0.6em;
+    }
+
+    #resume-content h6 {
+        font-size: 0.4em;
+    }
+
+    #resume-content span,
+    #resume-content p {
+        font-size: 0.5em;
+    }
+}
