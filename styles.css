@@ -272,3 +272,10 @@ input {
         width: 100%;
     }
 }
+
+@media (max-width: 1200px) {
+
+    .personal-detail {
+        width: 100%;
+    }
+}
